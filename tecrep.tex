@@ -255,6 +255,29 @@ LINEの調査\footnote{https://linecorp.com/ja/pr/news/ja/2017/1819}によれば
 とりわけ「初級学習者がまず学ぶべき語彙を提示する」という条件のもとでは，効果的だと考えられる．
 
 \subsection{実装詳細}
+本研究で構築した検索サイトの仕様を表\ref{table:website}に示す．
+
+\begin{table}[ht]
+\begin{center}
+\begin{tabular}{l|l}
+   媒体 & ウェブサイト\\
+  \hline
+    推奨ブラウザ & -\\
+    対応機種 &  -\\
+    言語 &  -\\
+    - &  -\\
+    - &  -\\
+    - &  -\\
+    - &  -\\
+    - &  -\\
+    - &  -\\
+\hline
+\end{tabular}
+\caption{検索サイト仕様}
+\label{table:website}
+\end{center}
+\end{table}
+
 辞書検索サイトには，基本形検索，語根検索，および日本語検索が備わっている．基本形検索，語根検索ではアラビア語，日本語検索では日本語をテキストボックスに入力する．
 日本語検索のみ語彙データと部分一致で検索が実行される．
 
@@ -303,33 +326,26 @@ LINEの調査\footnote{https://linecorp.com/ja/pr/news/ja/2017/1819}によれば
 \end{figure}
 
 \section{おわりに}
-\subsection{まとめ}
-本研究で構築した検索サイトの仕様を図5に示す．
-\begin{figure}[H]
-\begin{center}
-\includegraphics[scale=0.4]{fig05.png}
-\caption{検索サイト仕様}
-\end{center}
-\end{figure}
-
-
-\subsection{語彙数の調整}
+[結論を書く]  ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** *****.
+ ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** *****.
+ ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** *****.
+ 
 検索サイトでは初学者向けに語彙を選定するため，頻度を1つの指標とし，上位2,000語までを収録した．
 これが初学者の学習目的や能力に見合ったものである保証はなく，実際に検索サイトが利用されていく中で調整する必要がある．
 また純粋に頻度のみを指標としたが、仕様頻度は高くないが日常的によく用いる語彙などが不足している可能性もある．
 これらを踏まえ，収録する語彙の内容と語彙量を調整していくことが今後の大きな課題となる．
 
 \section{謝辞}
-本研究で用いた語彙データ，『『大学のアラビア語』』単語帳』は青山弘之氏（東京外国語大学大学院総合国際学研究院教授）の協力を受けて実装することができた．
-また論文執筆において井上剛氏（奈良先端技術大学院大学自然言語処理研究室）から多くの助言をいただいた．
+本研究で用いた語彙データの一部は，東京外国語大学の青山弘之氏から提供を受けた．
+また論文執筆において奈良先端技術大学院大学の井上剛氏から多くの助言をいただいた．
 
 \begin{thebibliography}{99}
 \bibitem{habash2010}
-Nizal Y．Habash，Introduction to Arabic Natural Language Processing，Morgan and Claypool Publishers，2010
+Nizar Y. Habash，Introduction to Arabic Natural Language Processing，Morgan and Claypool Publishers，2010
 \bibitem{washimi2016}
 鷲見朗子 鷲見克典, 日本の高校と大学におけるアラビア語の教育と学習者, アラブ・イスラム研究(14), pp.103-121, 2016.
 \bibitem{habash2010}
-Nizal Y. Habash，Introduction to Arabic Natural Language Processing，Morgan\&Claypool，2010
+Nizar Y. Habash，Introduction to Arabic Natural Language Processing，Morgan\&Claypool，2010
 \bibitem{nishihara2012}
 西原哲雄，言語学入門，朝倉書店，2012
 \bibitem{sakaedani2008}
@@ -342,10 +358,10 @@ Tim Buckwalter  Parkinson Dilworth, A Frequency Dictionary of Arabic: Core Vocab
 Yuji Kawaguchi，Toshihiro Takagaki，Nobuo Tomimori，and Yoichiro Tsuruga，
 Corpus-Based Perspectives in Linguistics，John Benjamins
 \bibitem{teikoku}
-「原油の生産トップ10と日本の輸入先」， <https://www.teikokushoin.co.jp/statistics/map/index16.html>，2017年2月26日アクセス
+「原油の生産トップ10と日本の輸入先」， \textless \url{https://www.teikokushoin.co.jp/statistics/map/index16.html}\textgreater，2017年2月26日アクセス
 \bibitem{jetro}
- 日本貿易振興機構（ジェトロ），「日本の企業」<https://www.jetro.go.jp/ext_images/_Reports/02/8a510d662cfc29f9/6_jpcompany. pdf>，2018年2月26日アクセス
+ 日本貿易振興機構（ジェトロ），「日本の企業」\textless \url{https://www.jetro.go.jp/ext_images/_Reports/02/8a510d662cfc29f9/6_jpcompany.pdf}\textgreater，2018年2月26日アクセス
 \bibitem{nikkei}
-「アラビア語の専門家を育成」， <https://www.nikkei.com/article/DGXNZO22129830T20C11A1PE8000/>，2018年2月26日アクセス
+「アラビア語の専門家を育成」\textless \url{https://www.nikkei.com/article/DGXNZO22129830T20C11A1PE8000/}\textgreater，2018年2月26日アクセス
 \end{thebibliography}
 \end{document}
