@@ -80,7 +80,7 @@ Arabic, search site, e-learning
 特に初学者用の辞書は数が少ない．
 また紙媒体の初級者用辞書は基本形からの検索を採用していることが多く，語根を用いて語を調べることによる学習効果が期待できない．一方，これらの問題を解決した電子媒体の辞書は存在するものの，初学者向けに語彙が選定されていない点や，スマートフォンでの利用に特化されていない点などが問題である．
 
-本研究では，『『大学のアラビア語』』単語帳』および『A Frequency Dictionary of Arabic』のデータを用いて，アラビア語辞書検索サイトを構築した．基本形からの検索と語彙検索とを両立させつつ，これらのデータを用いて語彙を初級者向けに選定した．またスマートフォンからの利用に最適化したプラットフォームにすることで利便性も追求している．
+本研究では，教科書の語彙表\cite{aoyama2015}および高頻度語の辞書\cite{buckwalter2009}を用いて，アラビア語辞書検索サイトを構築した．基本形からの検索と語彙検索とを両立させつつ，これらのデータを用いて語彙を初級者向けに選定した．またスマートフォンからの利用に最適化したプラットフォームにすることで利便性も追求している．
 
 \section{アラビア語の言語的特徴}
 アラビア語は，アフロ・アジア語族のセム語派に属する言語である．アラビア語はエジプトやシリアをはじめ，20以上の国および地域で公用語となっている．
@@ -117,7 +117,7 @@ Ethnologue\footnote{\url{https://www.ethnologue.com/statistics/size}}による�
 \end{center}
 \end{table}
 
-例えば，<kAtibuN> \textit{\underline{\textbf{k}}A\underline{\textbf{t}}i\underline{\textbf{b}}\~u}\footnote{本稿では，アラビア文字をHabash-Soudi-Buckwalter記法に従って転記する．} は「作家」を意味し， <kitAbuN> \textit{\underline{\textbf{k}}i\underline{\textbf{t}}A\underline{\textbf{b}}\~u}は「本」を意味する．
+例えば，<kAtibuN> \textit{\underline{\textbf{k}}A\underline{\textbf{t}}i\underline{\textbf{b}}\~u}\footnote{本稿では，アラビア文字をHabash-Soudi-Buckwalter記法\cite{hsb}に従って転記する．} は「作家」を意味し， <kitAbuN> \textit{\underline{\textbf{k}}i\underline{\textbf{t}}A\underline{\textbf{b}}\~u}は「本」を意味する．
 両単語の語根は<b>-<t>-<k> \textit{\textbf{k}-\textbf{t}-\textbf{b}}であり，これは《書くこと》にまつわる語根である．
 ここで注意したいのは，語根はその並べ方まで含めたものであり，語根<b>-<t>-<k> \textit{\textbf{k}-\textbf{t}-\textbf{b}}は，<k>-<t>-<b> \textit{\textbf{b}-\textbf{t}-\textbf{k}}や<t>-<b>-<k> \textit{\textbf{k}-\textbf{b}-\textbf{t}} とは異なる．\footnote{3つの子音の順列が全て語根となるわけではない．}
 厳密に言えば，3子音の組み合わせではなく，3子音の順列であると言える．
@@ -125,7 +125,7 @@ Ethnologue\footnote{\url{https://www.ethnologue.com/statistics/size}}による�
 
 \section{アラビア語辞書検索システムの構築}
 \subsection{既存辞書の問題点}
-紙媒体の初学者用の辞書としては，「パスポート初級アラビア語辞典」がある．
+紙媒体の初学者用の辞書としては，『パスポート初級アラビア語辞典』がある．
 これは約4,200語を収録した基本形から検索する辞書である．
 意味の選定や補足が充実した辞書であるが，辞書の利用のしやすさをとって基本形からの検索を採用したことで，後述する語根からの検索によって期待される学習効果が得られない．
 
@@ -237,9 +237,9 @@ LINEの調査\footnote{https://linecorp.com/ja/pr/news/ja/2017/1819}によれば
 本論で構築する辞書検索サイトも語根検索と基本形検索を備えている．
 
 \subsection{アラビア語辞書データ}
-我々は，収録する語彙データとして『『大学のアラビア語』』単語帳』\cite{aoyama2015}より2,081語を抽出した．
+我々は，収録する語彙データとして青山ら\cite{aoyama2015}より2,081語を抽出した．
 これは，大学でアラビア語を学ぶ人が覚えるべき語彙を収録したものである．
-さらに『A Frequency Dictionary of Arabic』の上位2,000語のうち，『『大学のアラビア語』』単語帳』に含まれない818語を追加した，最終的に全2,909語を収録した．
+さらにBuckwalterら\cite{buckwalter2009}の上位2,000語のうち，青山ら\cite{aoyama2015}に含まれない818語を追加した，最終的に全2,909語を収録した．
 またTufs言語モジュール\cite{kawaguchi2007}にアップロードされている約2,000文を例文として収録した．
 
 3.1で取り上げたように，語彙数をむやみに増やせば初学者にとって検索結果の中から適切なものを選び出すのが困難となる．
@@ -325,7 +325,7 @@ LINEの調査\footnote{https://linecorp.com/ja/pr/news/ja/2017/1819}によれば
 \end{figure}
 
 \section{おわりに}
-本研究では，『『大学のアラビア語』』単語帳』および『A Frequency Dictionary of Arabic』を用いて初級学習者向けのアラビア語辞書検索サイトを構築した．
+本研究では，教科書の語彙表\cite{aoyama2015}および高頻度語の辞書\cite{buckwalter2009}を用いて初級学習者向けのアラビア語辞書検索サイトを構築した．
 これらの語彙データを用いることで，語彙を初級者向けに選定している．
 検索サイトは，基本形からの検索と語彙からの検索の2つを兼ね備えており，またスマートフォンからの縦長の画面から利用の最適化されている．
 
@@ -342,25 +342,27 @@ LINEの調査\footnote{https://linecorp.com/ja/pr/news/ja/2017/1819}によれば
 \bibitem{washimi2016}
 鷲見朗子 鷲見克典, 日本の高校と大学におけるアラビア語の教育と学習者, アラブ・イスラム研究(14), pp.103-121, 2016.
 \bibitem{habash2010}
-Nizar Y. Habash，Introduction to Arabic Natural Language Processing，Morgan\&Claypool，2010
+Nizar Habash，Introduction to Arabic Natural Language Processing，Morgan\&Claypool，2010．
+\bibitem{hsb}
+Nizar Habash, Abdelhadi Soudi, and Tim Buckwalter，On Arabic Transliteration，Arabic Computational Morphology: Knowledge-based and Empirical Methods，Springer，2007．
 \bibitem{nishihara2012}
 西原哲雄，言語学入門，朝倉書店，2012
 \bibitem{sakaedani2008}
-榮谷温子，アラビア語辞典の語根順配列とアルファベット順配列語彙習得の観点から, 外国語教育研究(11)，pp.90-100，2008
+榮谷温子，アラビア語辞典の語根順配列とアルファベット順配列語彙習得の観点から, 外国語教育研究(11)，pp.90-100，2008．
 \bibitem{aoyama2015}
-青山弘之，イハーブ・アフマド・エベード，『大学のアラビア語』単語帳，東京外国語大学，2015
+青山弘之，イハーブ・アフマド・エベード，『大学のアラビア語』単語帳，東京外国語大学，2015．
 \bibitem{heinle1990}
-I.S.P.Nation，Teaching and Learning Vocabulary， Heinle\&Heinle，1990
+I.S.P.Nation，Teaching and Learning Vocabulary， Heinle\&Heinle，1990．
 \bibitem{buckwalter2009}
-Tim Buckwalter，Parkinson Dilworth，A Frequency Dictionary of Arabic: Core Vocabulary for Learners， Routledge，2009
+Tim Buckwalter，Parkinson Dilworth，A Frequency Dictionary of Arabic: Core Vocabulary for Learners， Routledge，2009．
 \bibitem{kawaguchi2007}
 Yuji Kawaguchi，Toshihiro Takagaki，Nobuo Tomimori，and Yoichiro Tsuruga，
-Corpus-Based Perspectives in Linguistics，John Benjamins
+Corpus-Based Perspectives in Linguistics，John Benjamins，2007．
 \bibitem{teikoku}
-「原油の生産トップ10と日本の輸入先」， \textless \url{https://www.teikokushoin.co.jp/statistics/map/index16.html}\textgreater，2017年2月26日アクセス
+「原油の生産トップ10と日本の輸入先」， \textless \url{https://www.teikokushoin.co.jp/statistics/map/index16.html}\textgreater，2017年2月26日アクセス．
 \bibitem{jetro}
- 日本貿易振興機構（ジェトロ），「日本の企業」\textless \url{https://www.jetro.go.jp/ext_images/_Reports/02/8a510d662cfc29f9/6_jpcompany.pdf}\textgreater，2018年2月26日アクセス
+ 日本貿易振興機構（ジェトロ），「日本の企業」\textless \url{https://www.jetro.go.jp/ext_images/_Reports/02/8a510d662cfc29f9/6_jpcompany.pdf}\textgreater，2018年2月26日アクセス．
 \bibitem{nikkei}
-「アラビア語の専門家を育成」\textless \url{https://www.nikkei.com/article/DGXNZO22129830T20C11A1PE8000/}\textgreater，2018年2月26日アクセス
+「アラビア語の専門家を育成」\textless \url{https://www.nikkei.com/article/DGXNZO22129830T20C11A1PE8000/}\textgreater，2018年2月26日アクセス．
 \end{thebibliography}
 \end{document}
