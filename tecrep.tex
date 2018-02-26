@@ -10,6 +10,7 @@
 %\usepackage[fleqn]{amsmath}
 %\usepackage{amssymb}
 %\usepackage[dvipdfmx]{hyperref}
+\usepackage{arabtex}
 \usepackage{url}
 \def\IEICEJcls{\texttt{ieicej.cls}}
 \def\IEICEJver{3.0}
@@ -38,6 +39,7 @@
 %\MailAddress{$\dagger$hanako@denshi.ac.jp,
 % $\dagger\dagger$\{taro,jiro\}@jouhou.co.jp}
 \begin{document}
+\setarab
 %\novocalize
 \begin{jabstract}
 本研究は，初級学習者を対象としたアラビア語検索サイト構築について述べる．
@@ -106,10 +108,10 @@ Ethnologue\footnote{\url{https://www.ethnologue.com/statistics/size}}による�
 \begin{table}[ht]
 \begin{center}
 \begin{tabular}{l|cc}
-   語根& <b>-<t>-<k> \textit{\textbf{k-t-b}} & 書くこと\\
+   語根& <b>-<t>-<k> \textit{\textbf{K-T-B}} & 書くこと\\
   \hline
- 派生語& <kAtibuN>  \textit{\underline{\textbf{k}}A\underline{\textbf{t}}i\underline{\textbf{b}}\~u}& 作家\\
-  派生語& <kitAbuN>  \textit{\underline{\textbf{k}}i\underline{\textbf{t}}Aa\underline{\textbf{b}}\~u} & 本\\
+ 派生語& <kAtibuN>  \textit{\textbf{K\=aTiBun}}& 作家\\
+  派生語& <kitAbuN>  \textit{\textbf{KiT\=aBun}}& 本\\
 \hline
 \end{tabular}
 \caption{語根KTBと派生語「作家」「本」}
@@ -117,7 +119,7 @@ Ethnologue\footnote{\url{https://www.ethnologue.com/statistics/size}}による�
 \end{center}
 \end{table}
 
-例えば，「KāTiBun\footnote{大文字のアルファベットは語根を示す。}」は「作家」を意味し，「KiTāBun」は「本」を意味する．
+例えば，「K\=aTiBun\footnote{大文字のアルファベットは語根を示す。}」は「作家」を意味し，「KiT\=aBun」は「本」を意味する．
 両単語の語根は「KTB」であり，これは「書くこと」にまつわる語根である．
 ここで注意したいのは，語根はその並べ方まで含めたものであり，語根「KTB」は，「BKT」や「KBT」 とは異なるということだ．\footnote{3つの子音の順列が全て語根となるわけではない．}
 厳密に言えば，3子音の組み合わせではなく，3子音の順列であると言える．
@@ -143,16 +145,16 @@ LINEの調査\footnote{https://linecorp.com/ja/pr/news/ja/2017/1819}によれば
 \subsection{語根・基本形からの検索}
 \subsubsection{語根からの検索}
 伝統的にアラビア語の辞書では，語根から語を検索する辞書が主流であった．
-表1の例であれば，「KāTiBun」と「KiTāBun」はともに辞書の見出し語「KTB」のグループにまとめられている．
+表1の例であれば，「K\=aTiBun」と「KiT\=aBun」はともに辞書の見出し語「KTB」のグループにまとめられている．
 今まで基本形から語を検索する日本語や英語の辞書しか使ったことのない学生が，語根から検索するアラビア語辞書の利用に慣れるまでには時間を要する．
 また語根から語を検索するためには，調べたい語彙の語根を判別する必要性があり，これには相応の文法力が必要とされる．
 
 \begin{table}[ht]
 \begin{center}
 \begin{tabular}{l|cc}
-   語根& KTB & 書くこと\\
+   語根 & <b>-<t>-<k> \textit{\textbf{K-T-B}} & 書くこと\\
   \hline
- 派生語& maKTaBaTun & 図書館\\
+ 派生語 & <maktabaTuN> \textit{\textbf{maKTaBatun}} & 図書館\\
 \hline
 \end{tabular}
 \caption{語根KTBと派生語「図書館」}
@@ -167,10 +169,10 @@ LINEの調査\footnote{https://linecorp.com/ja/pr/news/ja/2017/1819}によれば
 \begin{table}[ht]
 \begin{center}
 \begin{tabular}{l|cc}
-   語根& NWM & 寝ること\\
+   語根 & <m>-<w>-<n> \textit{\textbf{N-W-M}} & 寝ること\\
   \hline
- 派生語& NāMa & 寝る\footnote{三人称男性単数完了形}\\
-  派生語& NiYāMun & 睡眠\\
+ 派生語& <nAma> \textit{\textbf{N\=aMa}} & 寝る\footnote{三人称男性単数完了形}\\
+  派生語& <niyAmuN> \textit{\textbf{Niy\=aMun}}& 睡眠\\
 \hline
 \end{tabular}
 \caption{語根NWMと派生語「寝る」「睡眠」}
@@ -179,7 +181,7 @@ LINEの調査\footnote{https://linecorp.com/ja/pr/news/ja/2017/1819}によれば
 \end{center}
 \end{table}
 
-「NWM」は「寝る」に関わる語根だが，これが派生した動詞「NāMa」では第二子音「W」が長母音化し，名詞「NiyāMun」では同じく第二子音「W」が「Y」に変化している．
+「NWM」は「寝る」に関わる語根だが，これが派生した動詞「N\=aMa」では第二子音「W」が長母音化し，名詞「Niy\=aMun」では同じく第二子音「W」が「Y」に変化している．
 これらの例のように，一見しただけでは語根の判別が難しい語も多い．
 こういった場合，語根から辞書を引くことは格段に難しくなる．
 特に文法力がまだ十分に備わっていない初学者は，語の意味を調べることさえできないという状態に陥る．
@@ -193,8 +195,8 @@ LINEの調査\footnote{https://linecorp.com/ja/pr/news/ja/2017/1819}によれば
 \begin{tabular}{l|ccc}
    語彙 & 意味 & 複数形\\
   \hline
- KāTiBun & 作家 & KuTTāBun \\
-  KiTāBun & 本 & KuTuBun\\
+  <kAtibuN> \textit{\textbf{K\=aTiBun}} & 作家 & <kuTAbuN> \textit{\textbf{KuTT\=abuN}}\\
+  <kitAbuN> \textit{\textbf{KiT\=aBun}} & 本 & <kutubuN> \textit{\textbf{KuTuBun}}\\
 \hline
 \end{tabular}
 \caption{語根KTBと派生語「本」「作家」の複数形}
@@ -213,7 +215,7 @@ LINEの調査\footnote{https://linecorp.com/ja/pr/news/ja/2017/1819}によれば
 しかし一点注意しなければいけない点がある．
 名詞・形容詞は単数形，動詞は三人称男性単数完了形が基本形となっているため，調べたい語彙が名詞・形容詞の複数形だった場合や，動詞の活用形だった場合や，それらを基本形に戻す文法力が必要である．
 
-表4の例であれば，「KuTTāBun」は「KāTiBun」に，「KuTuBun」は「KiTāBun」に戻さなければ辞書を引くことはできない．
+表4の例であれば，「KuTT\=aBun」は「K\=aTiBun」に，「KuTuBun」は「KiT\=aBun」に戻さなければ辞書を引くことはできない．
 複数形が規則変化するものである場合，複数形から単数形を復元することは難しくないため，基本形から引く辞書ですぐに調べることができる．
 しかし表4の名詞のように複数形が不規則変化するものの場合，辞書を引くのは当然それらが学習者にとって初見の時であるため，複数形から単数形への復元は困難であり，辞書を引くことは難しくなる．
 この場合には，語根から検索する方が適当である．
@@ -268,7 +270,7 @@ LINEの調査\footnote{https://linecorp.com/ja/pr/news/ja/2017/1819}によれば
 また検索ボックスには，入力補完機能が実装されており，収録されている語彙データが検索候補として表示される仕様になっている．
 検索したい語の基本形や語根が曖昧な場合にも，検索候補を表示することによって利用者の探している語とのマッチングが取れる可能性を高めている．
 
-図２のように，基本形検索においてكと入力すると，語彙データにあるكから始める語が検索候補として表示される．
+図２のように，基本形検索において<k>と入力すると，語彙データにある<k>から始める語が検索候補として表示される．
 
 \begin{figure}[H]
 \begin{center}
